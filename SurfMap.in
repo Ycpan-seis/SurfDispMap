@@ -1,0 +1,26 @@
+# input file for SurfMap
+# --- model setting ---
+# model_in (The reference model)
+USTClithoTB.txt
+# nx,ny,nz (grid number in lon lat and depth direction)
+31 21 12 
+# depth (maximum depth in the model)
+150 
+# thick (thickness of each layer after interpolation)
+1   
+# --- parameter for surfdisp ---
+# ifunc(1 for Love,2 for Rayleigh), mode(fundamental=1), kmax(number of periods)
+2 1 46
+# dT
+1 
+# periods used
+5     6     7     8     9    10    11    12    13    14    15    16    17    18    19    20    21    22    23    24    25    26    27    28    29    30    31    32    33    34	35    36    37    38    39    40    41    42    43    44    45    46    47    48    49    50
+# --- convert to format .mat ---
+# Tstart
+5
+# xstart ystart (degree, start point (lon, lat) of the model)
+90 23
+# dx, dy (grid size (lon, lat))
+0.5 0.5
+# ref (reference range)
+0.15
