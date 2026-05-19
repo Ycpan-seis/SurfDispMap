@@ -5,6 +5,12 @@ This program combines Python preprocessing scripts with the CPS surface-wave for
 
 ---
 
+# 🔧 Dependencies
+
+- Linux/Mac (gfortran)
+- Python 3 (numpy,scipy)
+
+---
 # 📂 Project Structure
 
 ```text
@@ -29,13 +35,11 @@ Compile the CPS forward modeling code:
 make
 ```
 
-After compilation, the executable:
+After compilation, the executable file will be generated 
 
 ```text
 ./bin/surfdisp
 ```
-
-will be generated 
 
 ---
 
@@ -47,7 +51,7 @@ Prepare a reference 3D shear-wave velocity model
 ## Format
 
 ```text
-longitude latitude depth Vs
+longitude(°) latitude(°) depth(km) Vs(km/s)
 ```
 
 ## Example
@@ -144,7 +148,7 @@ ordered according to the grid sequence of the reference Vs model.
 ## Format
 
 ```text
-period dispersion_velocity
+period(s) velocity(km/s)
 ```
 
 ## Example
@@ -173,18 +177,7 @@ https://github.com/Ycpan-seis/EGFAnalysisTimeFreq_version_2024
 
 ---
 
-# 🔧 Dependencies
 
-- Linux
-- Python 3
-- NumPy
-- SciPy
-- CPS (`surfdisp96`)
+# Reference
 
----
 
-# 📚 Acknowledgment
-
-This project is developed based on the CPS surface-wave forward modeling program:
-
-- Herrmann, R. B., Computer Programs in Seismology (CPS)
