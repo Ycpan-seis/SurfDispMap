@@ -171,13 +171,11 @@ SurfDisp.mat
 
 This file packages the forward-modeled surface-wave dispersion maps into MATLAB `.mat` format.
 
-The output format is compatible with:
-
-https://github.com/Ycpan-seis/EGFAnalysisTimeFreq_version_2024
+The output format is compatible with [**EGFAnalysisTimeFreq_version_2024**](https://github.com/Ycpan-seis/EGFAnalysisTimeFreq_version_2024).
 
 ---
 
 
 # Reference
-
-
+Herrmann, R. B. (2013). Computer programs in seismology: An evolving tool for instruction and research. Seismological Research Letters, 84(6), 1081-1088. https://doi.org/10.1785/0220110096
+ 
