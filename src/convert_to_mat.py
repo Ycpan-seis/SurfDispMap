@@ -79,4 +79,4 @@ for j in range(nt):
     ref_range[j,0]=Tstart+dT*j
     ref_range[j,1]=ref
 
-savemat('./OUTPUT/Rayl.mat', {'disperT_m': disperT,'lat_m': lat_m,'lon_m': long_m,'ref_range': ref_range,'disp3D_phase': disp3D_phase,'disp3D_group': disp3D_group})
+savemat('./OUTPUT/SurfDisp.mat', {'disperT_m': disperT,'lat_m': lat_m,'lon_m': long_m,'ref_range': ref_range,'disp3D_phase': disp3D_phase,'disp3D_group': disp3D_group})
