@@ -25,7 +25,7 @@ dx,dy = map(float,lines[9].split())
 ref = float(lines[10])
 
 #phase v
-with open('disp_all_phase.txt', 'r') as file:
+with open('./OUTPUT/disp_all_phase.txt', 'r') as file:
     data = []
     for line in file:
         fields = line.split()
@@ -41,7 +41,7 @@ for i in range(nx):
             disp3D_phase[j,i,k]=phasedata[j*nx*nt+i*nt+k,1]
             
 #group v
-with open('disp_all_group.txt', 'r') as file:
+with open('./OUTPUT/disp_all_group.txt', 'r') as file:
     data = []
     for line in file:
         fields = line.split()
@@ -79,4 +79,4 @@ for j in range(nt):
     ref_range[j,0]=Tstart+dT*j
     ref_range[j,1]=ref
 
-savemat('./OUTPUT/SurfDisp.mat', {'disperT_m': disperT,'lat_m': lat_m,'lon_m': long_m,'ref_range': ref_range,'disp3D_phase': disp3D_phase,'disp3D_group': disp3D_group})
+savemat('./OUTPUT/Rayl.mat', {'disperT_m': disperT,'lat_m': lat_m,'lon_m': long_m,'ref_range': ref_range,'disp3D_phase': disp3D_phase,'disp3D_group': disp3D_group})

@@ -40,5 +40,5 @@ if l<nT:
         add[0,0]=npdata[l-1+i,0]+dT
         add[0,1]=npdata[l-1+i,1]+ np.random.uniform(-0.001, 0.005)
         npdata=np.vstack([npdata, add])
-with open(outfile, 'w') as file:
+with open(outfile, 'a') as file:
     np.savetxt(file,npdata)
