@@ -23,6 +23,8 @@ EOF
 # line 7 : periods
 periods="$line7"
 
+: > OUTPUT/disp_all_phase.txt
+: > OUTPUT/disp_all_group.txt
 # ===== loop over igr(0 for phase; 1 for group) =====
 for igr in 0 1
 do
